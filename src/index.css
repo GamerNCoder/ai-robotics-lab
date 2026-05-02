@@ -1,0 +1,11 @@
+:root {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  background: #0a0f0d;
+  color: #d1fae5;
+}
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
