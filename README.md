@@ -13,6 +13,8 @@ Browser **occupancy-grid** simulator + **BFS** path planning + step-through anim
 npm install && npm run dev
 ```
 
+Responsive layout, **PWA manifest** (`public/manifest.webmanifest`), safe-area padding. **`MOBILE.md`** — Expo path and extracting planning logic.
+
 ## Ideas for v2
 
 - Penalty for turns (non-holonomic hint).

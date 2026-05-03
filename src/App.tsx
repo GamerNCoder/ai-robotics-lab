@@ -91,7 +91,7 @@ export default function App() {
   const resetAnim = useCallback(() => setStep(0), [])
 
   return (
-    <div style={{ maxWidth: 720, margin: '0 auto', padding: '1.25rem' }}>
+    <div style={{ width: '100%', maxWidth: 720, margin: '0 auto', padding: 'clamp(0.75rem, 3vw, 1.25rem)' }}>
       <h1 style={{ marginTop: 0 }}>AI Robotics Lab (grid sim)</h1>
       <p style={{ color: '#6ee7b7', lineHeight: 1.5 }}>
         2D occupancy grid, <strong>BFS shortest path</strong>, step animation. “Copilot” panel = transparent heuristics
@@ -114,14 +114,14 @@ export default function App() {
         <button
           type="button"
           onClick={() => setStep((s) => Math.min(s + 1, Math.max(path.length - 1, 0)))}
-          style={{ padding: '8px 14px', borderRadius: 8, border: 'none', background: '#059669', color: '#fff', cursor: 'pointer' }}
+          style={{ padding: '10px 16px', minHeight: 44, borderRadius: 8, border: 'none', background: '#059669', color: '#fff', cursor: 'pointer', fontSize: 16 }}
         >
           Step +
         </button>
         <button
           type="button"
           onClick={resetAnim}
-          style={{ padding: '8px 14px', borderRadius: 8, border: '1px solid #047857', background: 'transparent', color: '#a7f3d0', cursor: 'pointer' }}
+          style={{ padding: '10px 16px', minHeight: 44, borderRadius: 8, border: '1px solid #047857', background: 'transparent', color: '#a7f3d0', cursor: 'pointer', fontSize: 16 }}
         >
           Reset anim
         </button>
@@ -132,7 +132,8 @@ export default function App() {
           display: 'grid',
           gridTemplateColumns: `repeat(${N}, 1fr)`,
           gap: 2,
-          maxWidth: 440,
+          maxWidth: 'min(100%, 440px)',
+          width: '100%',
           aspectRatio: '1',
         }}
       >
