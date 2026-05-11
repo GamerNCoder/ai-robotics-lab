@@ -1,0 +1,23 @@
+{
+  "name": "AI Robotics Lab",
+  "short_name": "RoboLab",
+  "description": "Grid robot pathfinding with BFS — offline-capable PWA shell.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "dir": "ltr",
+  "background_color": "#0a0f0d",
+  "theme_color": "#0a0f0d",
+  "categories": ["education", "games"],
+  "icons": [{ "src": "/vite.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }],
+  "shortcuts": [
+    {
+      "name": "Open lab",
+      "short_name": "Lab",
+      "url": "/",
+      "icons": [{ "src": "/vite.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}
