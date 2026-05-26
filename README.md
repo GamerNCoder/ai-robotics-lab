@@ -2,6 +2,12 @@
 
 Browser **occupancy-grid** simulator + **BFS** path planning + step-through animation.
 
+## Status (May 2026)
+
+- **MVP**: occupancy grid + BFS + animation.
+- **PWA-ready**: manifest + responsive safe-area padding.
+- **Mobile path**: see `MOBILE.md` (Expo notes + extracting planning logic).
+
 ## Why admissions readers care
 
 - Shows **classical planning** (not only neural nets).
